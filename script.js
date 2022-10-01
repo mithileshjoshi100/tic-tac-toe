@@ -59,16 +59,144 @@ function boxClick(x) {
 }
 
 function check(matrix) {
-
+    // horizontal lines
     if (b1.innerHTML != '0' && areEqual(b1.innerHTML, b2.innerHTML, b3.innerHTML)) {
         if (b1.innerHTML == '1') {
             console.log('Player 1 Wins');
+            alert('Player 1 Wins');
+            reset();
         }
         else if (b1.innerHTML == '-1') {
             console.log('Player 2 wins');
+            alert('Player 2 Wins');
+            reset();
         }
         else {
 
+        }
+    }
+
+    if (b4.innerHTML != '0' && areEqual(b4.innerHTML, b5.innerHTML, b6.innerHTML)) {
+        if (b4.innerHTML == '1') {
+            console.log('Player 1 Wins');
+            alert('Player 1 Wins');
+            reset();
+        }
+        else if (b4.innerHTML == '-1') {
+            console.log('Player 2 wins');
+            alert('Player 2 Wins');
+            reset();
+        }
+        else {
+
+        }
+    }
+
+    if (b7.innerHTML != '0' && areEqual(b7.innerHTML, b8.innerHTML, b9.innerHTML)) {
+        if (b7.innerHTML == '1') {
+            console.log('Player 1 Wins');
+            alert('Player 1 Wins');
+            reset();
+        }
+        else if (b7.innerHTML == '-1') {
+            console.log('Player 2 wins');
+            alert('Player 2 Wins');
+            reset();
+        }
+        else {
+
+        }
+    }
+
+    // vertical lines
+    if (b1.innerHTML != '0' && areEqual(b1.innerHTML, b4.innerHTML, b7.innerHTML)) {
+        if (b1.innerHTML == '1') {
+            console.log('Player 1 Wins');
+            alert('Player 1 Wins');
+            reset();
+        }
+        else if (b1.innerHTML == '-1') {
+            console.log('Player 2 wins');
+            alert('Player 2 Wins');
+            reset();
+        }
+        else {
+
+        }
+    }
+
+    if (b2.innerHTML != '0' && areEqual(b2.innerHTML, b5.innerHTML, b8.innerHTML)) {
+        if (b2.innerHTML == '1') {
+            console.log('Player 1 Wins');
+            alert('Player 1 Wins');
+            reset();
+        }
+        else if (b2.innerHTML == '-1') {
+            console.log('Player 2 wins');
+            alert('Player 2 Wins');
+            reset();
+        }
+        else {
+
+        }
+    }
+
+    if (b3.innerHTML != '0' && areEqual(b3.innerHTML, b6.innerHTML, b9.innerHTML)) {
+        if (b3.innerHTML == '1') {
+            console.log('Player 1 Wins');
+            alert('Player 1 Wins');
+            reset();
+        }
+        else if (b3.innerHTML == '-1') {
+            console.log('Player 2 wins');
+            alert('Player 2 Wins');
+            reset();
+        }
+        else {
+
+        }
+    }
+
+    // cross lines
+
+    if (b1.innerHTML != '0' && areEqual(b1.innerHTML, b5.innerHTML, b9.innerHTML)) {
+        if (b1.innerHTML == '1') {
+            console.log('Player 1 Wins');
+            alert('Player 1 Wins');
+            reset();
+        }
+        else if (b1.innerHTML == '-1') {
+            console.log('Player 2 wins');
+            alert('Player 2 Wins');
+            reset();
+        }
+        else {
+
+        }
+    }
+
+    if (b3.innerHTML != '0' && areEqual(b3.innerHTML, b5.innerHTML, b7.innerHTML)) {
+        if (b3.innerHTML == '1') {
+            console.log('Player 1 Wins');
+            alert('Player 1 Wins');
+            reset();
+        }
+        else if (b3.innerHTML == '-1') {
+            console.log('Player 2 wins');
+            alert('Player 2 Wins');
+            reset();
+        }
+        else {
+
+        }
+    }
+
+}
+
+function reset() {
+    for (let row of matrix) {
+        for (let element of row) {
+            element.innerHTML = '0';
         }
     }
 }
